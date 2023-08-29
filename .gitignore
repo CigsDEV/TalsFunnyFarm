@@ -49,6 +49,7 @@ ExportedObj/
 
 *.asset
 *.res
+*.meta
 
 # Unity3D generated meta files
 *.pidb.meta
