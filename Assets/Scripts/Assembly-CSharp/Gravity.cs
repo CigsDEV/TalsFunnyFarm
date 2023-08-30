@@ -36,4 +36,14 @@ public class Gravity : MonoBehaviour
         // Move the character using the velocity
         controller.Move(velocity * Time.deltaTime);
     }
+
+    public Vector3 GetVelocity()
+    {
+        return velocity;
+    }
+
+    public void SetYVelocity(float newVelocity)
+    {
+        velocity.y = newVelocity;
+    }
 }

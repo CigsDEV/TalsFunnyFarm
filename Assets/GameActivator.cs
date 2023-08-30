@@ -23,8 +23,9 @@ public class GameActivator : MonoBehaviour
             Active = true;
             SDS.requirementMet = false;
             SDS.trigger.isTrigger = false;
-
+            SubtitleManager sm = FindObjectOfType<SubtitleManager>();
             StartCoroutine(LerpCameraSize(0.1f, 5f)); // Start the lerp
+            sm.Add3DSubtitle("Oh, Hey there! welcome to my farm!", TalTutor.GetComponent<AudioSource>().clip.length, new Color32(242, 151, 31, 255), TalTutor.transform, TalTutor.GetComponent<AudioSource>());
         }
     }
 

@@ -10,12 +10,12 @@ public class PushableBox : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (other.gameObject.CompareTag("Player")) 
+        if (hit.gameObject.CompareTag("Player"))
         {
             Vector3 pushDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
-            rb.AddForce(pushDirection * pushStrength, ForceMode.Force);
+            rb.AddForceAtPosition(pushDirection * pushStrength, hit.point, ForceMode.Impulse);
         }
     }
 }
