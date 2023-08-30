@@ -40,3 +40,7 @@ The tal mod is a [Baldi's Basics in Education and Learning mod](https://basicall
 - Drop credits in the Credits folder
   - Icon
   - Social media links, maximum (3-4) (optional.)
+
+- DO NOT
+  - Upload the unfinished mod to gamebanana, or any other file hosting website.
+  - Put any of the assets behind a paywall.
