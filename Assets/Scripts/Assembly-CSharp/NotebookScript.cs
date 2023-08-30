@@ -41,10 +41,6 @@ public class NotebookScript : MonoBehaviour
 				this.up = false;
 				this.respawnTime = 120f;
 				this.gc.CollectNotebook();
-				GameObject gameObject = UnityEngine.Object.Instantiate<GameObject>(this.learningGame);
-				gameObject.GetComponent<MathGameScript>().gc = this.gc;
-				gameObject.GetComponent<MathGameScript>().baldiScript = this.bsc;
-				gameObject.GetComponent<MathGameScript>().playerPosition = this.player.position;
 			}
 		}
 	}
@@ -68,7 +64,7 @@ public class NotebookScript : MonoBehaviour
 	public Transform player;
 
 	// Token: 0x04000670 RID: 1648
-	public GameObject learningGame;
+	//public GameObject learningGame;
 
 	// Token: 0x04000671 RID: 1649
 	public AudioSource audioDevice;
